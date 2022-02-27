@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color: black; color: white;}
+
+div#Deneme1 { color:aqua; }
+div#Deneme2 { color:blue; }
+div#Deneme3 { color:beige;}
+div#Deneme4 { color:burlywood;}
