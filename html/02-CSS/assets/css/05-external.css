@@ -1,0 +1,33 @@
+
+
+h1{
+    font-size:3rem;
+    text-align:center;
+    background-color:yellow
+}
+
+p{
+    font-size: 2rem;
+    background-color:aqua;
+    color:red;
+}
+.ortala
+ {
+    color:green;
+    background-color : white;
+    font-size: 2rem;
+    text-align:center;
+}
+.sol{
+    font-size:25px;
+    color:white;
+    background-color:black;
+    align:left;
+}
+.vurgula {
+    font-style: solid;
+    color:rgb(243, 0, 0);
+}
+b.kalın{
+    color: aqua;
+}

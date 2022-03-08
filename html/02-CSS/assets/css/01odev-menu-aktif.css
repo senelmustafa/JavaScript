@@ -1,0 +1,24 @@
+
+    .aktif {
+        background-color: rgb(29, 27, 27);
+        color: white;
+        width: 175px;
+        height: 50px;
+        text-align: center;
+        font-size: 2rem;
+      font-family: "Helvetica";
+       padding: 2px;
+      }
+
+    .alt {
+        background-color: rgb(197, 196, 196);
+        color: rgb(0, 0, 0);
+        width: 175px;
+        height: 50px;
+        text-align: center;
+        font-size: 2rem;
+       
+        font-family: "Helvetica";
+         
+      }
+      

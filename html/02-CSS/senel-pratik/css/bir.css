@@ -1,0 +1,40 @@
+h1 {
+    color: red;
+     font-size: 50px; 
+     font-family:verdana;
+     
+     font-weight: bold;
+    }
+p {
+    background: blue;
+    color: white;
+}
+
+    h2{
+        color: cadetblue;
+        background:yellow;
+    }
+
+div.bir h1 {
+     color: pink;
+      background: blue;
+    }
+
+div.iki h2{ 
+    color:yellow;
+     background:red;}
+/*  açıklama satırı*/
+ 
+h1#baslik {
+    border-style: solid;
+    border-width: 1px;
+
+    width:300px;
+    background-family: orange;
+
+    }
+    div#genel h1.altbaslik{
+      background: blue;
+      color: #fff;
+      
+    }
