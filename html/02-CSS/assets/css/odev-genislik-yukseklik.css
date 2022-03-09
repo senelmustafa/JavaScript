@@ -1,0 +1,49 @@
+.bir {
+  background-color: rgb(2, 135, 224);
+  height: 80px;
+}
+.iki {
+  background-color: rgb(250, 110, 46);
+  height: 35px;
+}
+.uc {
+  background-color: rgb(255, 255, 255);
+  height: 15px;
+}
+/*  alt tablo kısmı*/
+.btablo {
+   background-color: rgb(51, 51, 51);
+  height: 50px;
+  width: 12%;
+  float: left;
+ 
+  
+}
+.itablo {
+  background-color: #3f82ff;
+  height:50px;
+  width: 18%;
+  float: left;
+}
+.utablo {
+  background-color: #ffee00;
+  height: 50px;
+  width: 20%;
+  float: left;
+}
+.dtablo {
+  background-color: rgb(255, 0, 0);
+  height: 50px;
+  width: 25%;
+  float: left;
+}
+.betablo {
+  background-color: rgb(4, 204, 54);
+  height: 50px;
+  width: 25%;
+  float: left;
+}
+.alt{
+   background-color: rgb(255, 255, 255);
+  height: 80px;
+}
