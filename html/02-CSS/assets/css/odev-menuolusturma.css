@@ -1,0 +1,67 @@
+   
+   
+   nav.menu{
+       width: 210px;
+   }
+   body{
+        padding: 0;
+        margin: 0;
+    }
+    .aktif {
+        background-color: rgb(97, 97, 97);
+        color: rgb(10, 10, 10);
+        width: 210px;
+        height: 50px;
+        text-align: left;
+        font-size: 2rem;
+        padding:5px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        text-decoration: none;
+     
+        
+       
+      }
+    
+
+    .alt {
+        background-color: rgb(197, 196, 196);
+        color: rgb(0, 0, 0);
+        width: 210px;
+        height: 50px;
+        text-align: left;
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif;
+        padding: 5px;
+        font-weight: 900;
+              
+     
+      }
+      .aktif:hover{
+          background-color:rgb(255, 255, 255) ;
+          color: rgb(4, 5, 5);
+      }
+
+      .alt:hover{
+        background-color:rgb(255, 255, 255) ;
+          color: rgb(255, 255, 255);  
+    }
+   
+li{
+    
+     
+     padding: 2px;
+     text-align: left;
+     background-color:darkolivegreen;
+     color:rgb(255, 254, 254);
+     list-style-type:"➡️";
+     list-style-position: inside;
+    
+}
+ 
+a{
+    text-decoration:none;
+     color: rgb(71, 70, 70);
+}
+ 
+      /* ul list -stylr-position :inside */

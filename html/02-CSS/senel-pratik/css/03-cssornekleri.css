@@ -1,0 +1,30 @@
+.cerceve{
+    border-style :dotted;
+      border-width: 2px;
+}
+ul{
+  list-style:"✔️";
+  background-color:rgb(7, 135, 248);
+  font-size: 2rem ; 
+  color:rgb(255, 255, 255);
+  font-family: cursive, "Helvetica Neue", Helvetica, sans-serif;
+ 
+}
+td{
+    font: 1em sans-serif; color: brown;
+   font-size: 2rem;
+   position: relative;
+
+
+}
+.kutu1{
+    width: 50%;
+    height: 10cm;
+    background-color:rgb(255, 0, 0);
+}
+.kutu2{
+    width: 50%;
+    height: 5cm;
+    background-color:rgb(80, 1, 170);
+    float: left;
+}
