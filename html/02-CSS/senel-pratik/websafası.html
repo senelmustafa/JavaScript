@@ -184,6 +184,12 @@ text-decoration: none;
 .iletisim{
     padding:0 190px 0 15px;
 }
+.header li:nth-child(3){
+    background-color:#111;
+}
+.header li:nth-child(3):header{
+    display: inline-block;
+}
 .mynetim{
  padding: 0 390px 0 300px;
 }
@@ -196,8 +202,18 @@ padding:0px 100px 0px 50px;
 .orta{
     padding:0px 100px 0px 150px;
 }
-
-
+.header ul li ul {
+    display:none;
+}
+.header ul li:hover ul{
+    display: block;
+}
+.header ul li a{
+    display:block;
+}
+.container{
+    display:;
+}
 
 
 
@@ -209,9 +225,13 @@ padding:0px 100px 0px 50px;
             <ul>
                 
                 <li class="mynetim"><a href="#">Mynetim.Com</a></li> 
-                <li ><a href="#">Ana Sayfa</a></li>
-                <li><a href="#">Portfolyo</a></li>
-                <li><a href="#">Hakkımda</a></li>
+                    <li ><a href="#">Ana Sayfa</a></li>
+                      <li><a href="#">Portfolyo</a>
+                          <ul>
+                            <li><a href="#">Alt Menu</a></li>
+                         </ul>    
+                    </li>
+                 <li><a href="#">Hakkımda</a></li>
                 <li class="iletisim"><a href="#">İletişim</a></li>
             </ul>
         </div>

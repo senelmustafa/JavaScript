@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+       :root{
+    --yazi:  rgb(228, 227, 227);
+    --zemin: rgb(70, 69, 69);
+    --uzeri:  rgb(230, 4, 4);
+}
+         nav.menu ul{
+            padding:0;
+             list-style: none;
+             text-align: center;
+         }
+         nav.menu {
+             background-color:var(--zemin);
+             color:var(--yazi);
+             
+         }
+         nav.menu a{
+             text-decoration: none;
+             color: var(--yazi);
+             font-family: Roboto;
+         }
+             
+         nav.menu li:nth-child(2){
+             padding:0 10px 0 0;
+         }
+
+         nav.menu li{
+            display:inline-block;
+            font-size: 2rem;
+            
+         }
+         nav.menu li::after{
+             content:"|";
+             padding:0 25px 0 10px;
+         }
+         nav.menu li:last-child::after{
+             content:" ";
+         }
+         nav.menu ul::before{
+            content:"⬅️";
+            padding:0 25px 0 5px;
+         }
+         nav.menu ul::after{
+            content:"➡️";
+         }
+     </style>
+ </head>
+ <body>
+       <nav class="menu">
+      <ul>
+        <li><a href="#">Ana Sayfa</a></li>
+        <li ><a href="#">Ürünler</a> </li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">İletişim</a></li>
+      </ul>
+    </nav>
+ </body>
+ </html>
