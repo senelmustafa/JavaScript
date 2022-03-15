@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+	margin:0;
+	padding:0
+}
+
+.menu {
+	width:100%;
+	margin:0 auto;
+	margin-top:10px;
+	background:#777
+}
+.menu ul {
+	display:block;
+	margin:0;
+	text-align:center;
+	padding:0
+}
+.menu ul li {
+	list-style:none;
+	display:inline-block
+}
+.menu ul li a {
+	display:block;
+	background:#777;
+	color:#fff;
+	font-size:2rem;
+    font-family: Cambria;
+	padding:0px 40px 5px 40px;
+	text-decoration:none;
+	font-family: Arial
+}
+.menu ul li a:hover {
+	background:#666
+}
+.menu ul li ul {
+	display:none;
+	position:absolute;
+	background:#666;
+	width:200px
+}
+.menu ul li ul li {
+	display:block
+}
+.menu ul li:hover > a {
+	background:#666
+}
+.menu ul li ul li a {
+	background:#666;
+	text-align:left
+}
+.menu ul li ul li a:hover {
+	background:#555
+}
+.menu ul li:hover ul {
+    
+	display:block
+}
+
+   .menu ul:last-child::after{
+             content:">>>";
+                padding:0px 0px 0 150px;
+                font-size: 2rem;
+                color:aqua;
+         }
+    .menu li::after{
+        content:" | ";
+    }
+   
+
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="" title="">ANASAYFA</a></li>
+            <li><a href="" title="">ÜRÜNLER</a>
+                <ul>
+                    <li><a href="" title="">WEB </a></li>
+                    <li><a href="" title="">GRAFİK</a></li>
+                    <li><a href="" title="">HOSTİNG</a></li>
+                </ul>
+            </li>
+            <li><a href="" title="">HAKKIMIZDA</a></li>
+            <li><a href="" title="">İLETİŞİM</a></li>
+        </ul>
+    </div>
+</body>
+</html>

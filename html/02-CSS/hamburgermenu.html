@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+
+:root{
+    --color: #a04a4a;
+    --color2: #f1a4a4;
+}
+body{
+    padding:1rem;
+}
+.hamburger{
+    padding:1rem;
+    
+
+}
+.ac ul{
+    background-color:var(--color2);
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+     
+}
+.ac a:before{
+    font: var(--color);
+    margin-right: 0.2rem;
+}
+.ac a{
+    text-decoration: none;
+
+}
+.ac a:hover{
+    display: block;
+    background-color:aqua;
+
+}
+
+.ac ul{
+    margin:0 0 1px 1px;
+    display: inline-block;
+    
+}
+.ac{
+    display: none;
+    margin: 5px;
+}
+#switch:checked + .ac {
+    display:block;
+
+}
+#switch{
+    display:none;
+}
+    </style>
+</head>
+<body>
+    <label for="switch" class="menu" ><i class="fa-solid fa-dragon"></i></span>
+    <input type="checkbox" id="switch">
+    <nav class="ac">
+        <ul>
+            <li><a href="#">anasafa</a></li>
+            <li><a href="#">ürünler</a></li>
+            <li><a href="#">iletişim</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

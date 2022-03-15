@@ -25,6 +25,7 @@
              text-decoration: none;
              color: var(--yazi);
              font-family: Roboto;
+             text-align: center;
          }
              
          nav.menu li:nth-child(2){
@@ -37,18 +38,32 @@
             
          }
          nav.menu li::after{
-             content:"|";
+             content:"  |  ";
              padding:0 25px 0 10px;
          }
          nav.menu li:last-child::after{
              content:" ";
          }
          nav.menu ul::before{
-            content:"⬅️";
-            padding:0 25px 0 5px;
+            content:" 👉👉";
+            
+            .section-header:last-child::after
+
+
+            display: inline-block;
+            padding:15px 45px 0  0;
+            
          }
          nav.menu ul::after{
-            content:"➡️";
+            content:"👈👈 ";
+            display: inline-block;
+             
+            
+             
+            /* no-repeat top right */
+         }
+         nav.menu a:hover{
+             background-color:var(--uzeri);
          }
      </style>
  </head>

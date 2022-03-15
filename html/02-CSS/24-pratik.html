@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=Mod değiştir, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .kutu{
+            background-color: rgb(101, 115, 243);
+           height:50vh;
+
+        }
+        .btn{
+             background-color: rgb(101, 115, 243);
+            color: white;
+            padding:0.5rem 1 rem;display: inline-block;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+        .btn:hover{
+            background-color:blueviolet;
+        }
+        .anahtar:hover + .kutu{
+            background-color:rgb(1, 70, 70);
+        }
+        #anahtar:checked + .kutu  {
+            background-color:bisque;
+        }
+
+        #anahtar {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+     <label for="anahtar" class="btn">mod değiştir</label>
+     <input type="checkbox" id="anahtar" class="anahtar">
+
+   
+    <div class ="kutu">  
+    
+    </div>
+</body>
+</html>

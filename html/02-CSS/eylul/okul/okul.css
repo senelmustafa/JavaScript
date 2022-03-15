@@ -1,0 +1,48 @@
+   a{
+          text-decoration: none;
+          color: black;
+        }
+        section.main{
+          background: url(../img/4.jpg) center no-repeat;
+          border: 3px solid black;
+        }
+        div.main{
+          background-color:brown;
+          padding:30px 
+        }
+        article.main{
+          text-align:center;
+          background-color:rgb(221, 236, 86)
+        }
+        form.main{
+          background-color:rgb(12, 172, 172);
+          width: min-content;
+          color:aliceblue;
+
+        }
+        article.main ol{
+          background-color:rgb(156, 156, 156);
+        }
+        /* teacher sayfası*/
+
+        body.teacher{
+         background:url(../img/4.jpg) center no-repeat;
+         width:min-content; 
+        }
+        section.main{
+            width:min-content;
+            background-color:aliceblue;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100%;
+
+        }
+        /*parrent sayfamız*/
+
+        body.parrent{
+
+            background :url(../img/4.jpg) center no-repeat;
+        }
+        section.parrent{
+            w
+        }
