@@ -1,0 +1,124 @@
+:root{
+    --header: rgb(255, 2, 2);
+    --main: rgb(250, 202, 43);
+    --aside: rgb(190, 190, 189);
+    --footer: rgb(54, 54, 54);
+
+}
+*{
+    font-size: 1.4rem;
+    font-family: Roboto,;
+
+}
+header{
+    display: flex;
+    gap:1rem;
+    flex-wrap: wrap;/* sımadpında alta kay*/
+    justify-content: space-between;
+    align-items: center;/*menu ile logyu ortaladı*/
+    padding:1rem;
+    background-color:var(--header);
+}
+header .logo img {
+width: 300px;
+
+}
+header .menu ul {
+    display: flex;
+    padding:0;
+    margin:0;
+    list-style: none;
+    gap: 1rem;
+}
+header .menu a {
+    text-decoration: none;
+    background-color:#FBB040;
+    color:rgb(7, 6, 6);
+    padding:0.5rem 1rem;
+    font-family: "Helvetica";
+    font-size:1rem;
+    border-radius: 0.3rem;
+}
+main{
+     background-color:var(--main);
+     display: flex;
+     flex:4;
+    
+    
+}
+section .magazalar{
+    display: flex;
+    gap:2rem;
+    flex:wrap;
+
+}
+main img{
+    border-radius: 35px 35px 35px 35px;
+    margin: 0.5rem;
+    display: wrap;
+}
+section {
+
+    display: flex;
+    flex:3;
+     
+}
+section .div1{
+    height:50%;
+}
+section p{
+    margin: 0.5rem 1rem;
+}
+
+
+aside{
+     flex:2;
+    background-color:var(--aside);
+    
+}
+
+aside .box img{
+     width:20vh;
+border-radius: 35px 35px 35px 35px;
+}
+ 
+
+
+footer{
+    background-color:var(--footer);
+     
+    display: flex;
+    gap:1rem;
+    flex-wrap: wrap;/* sımadpında alta kay*/
+    justify-content: space-between;
+    align-items: center;/*menu ile logyu ortaladı*/
+    padding:1rem;
+    
+     
+}
+footer ul li a {
+    color:white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin : 1rem;
+    display: flex;
+   
+   
+}
+footer div {
+  display:inline-block;
+   
+}
+footer ul {
+    display: flex;
+     list-style-type: none;
+     
+
+}
+ footer   img  {
+     display:block;
+      margin-bottom: 1rem;
+      align-content: center;
+
+      
+ }
