@@ -3,7 +3,7 @@
     padding: 0;
     font-size:1.2rem;
     font-family: Roboto;
-
+ 
 }
 :root{
     --menu:rgb(63, 62, 62);
@@ -17,25 +17,26 @@
 .menu{
     background-color:var(--menu);
     color: var(--yazi);
-   
+     
      
 }
 .menu .menu-ust {
     display:flex;
-   
+   justify-content: space-between;
 }
 
 .menu ul {
     display:flex;
     gap:1rem;
     list-style:none;
-    padding:absolute
+   
      
 }
 
 .menu ul li:hover ul {
       position:absolute;
-	display:block
+	display:block;
+  
 }
 .menu ul li ul li a:hover {
 	background:var(--menu);
@@ -65,4 +66,36 @@
 .menu ul li ul{
     display: none;
     
+}
+
+.header article {
+    display: flex;
+}
+.header article p {
+    display: block;
+    padding:1rem 1rem;
+}
+  .footer{
+    background-color:var(--footer);
+    
+    
+}
+.footer .alt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+.footer .alt ul {
+display: flex;
+gap: 1rem;
+
+}
+.footer .alt ul a{
+    text-decoration: none;
+color: var(--yazi);
+
+}
+.footer .alt ul li{
+list-style:none;
 }
