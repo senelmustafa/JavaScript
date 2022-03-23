@@ -1,0 +1,103 @@
+:root{
+    --color1:#EBB211;
+    --color2: #04D5FA;
+    --color3: #F8F9FA;
+    --color4:#535353;
+}
+.topbar{
+background-color:var(--color4);
+display: flex;
+justify-content: space-between;/*en sağa iconlar gitti*/
+padding:1rem;
+color: var(--color3);
+}
+.topbar ul{
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+   
+}
+.topbar i{
+    color: var(--color1);
+}
+.topbar .social-links{
+    font-size:1.3rem !important;
+}
+/*navbar*/
+.navbar{
+    font-size: 1.3rem;
+    position: sticky;
+    top:0;
+    z-index: 3;
+}
+.navbar ul a{
+    color: var(--color1);
+     padding:0.5rem 1rem !important;
+      border-radius: 2rem;
+}
+.navbar ul a:hover{
+   background-color: var(--color1);
+  
+   
+}
+.carousel-caption {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    left: 2.5rem;
+    color: #fff;
+    text-align: left;
+    width:40%;
+}
+.carousel-caption h5 {
+font-size: 3rem;
+text-shadow: 2px 3px 4px rgb(14, 13, 13);
+color: #F8F9FA;
+}
+.carousel-caption p {
+font-size: 1.3rem;
+}
+
+.carousel-control-next, 
+.carousel-control-prev{
+align-items: flex-end;
+padding:0.5rem;
+}
+.carousel-control-prev{
+
+    right: 1.5rem;
+    left:auto;
+}
+
+
+.why-us {
+     text-align: center;
+     position:relative;
+     top:-80px;
+     z-index: 5;
+}
+.why-us .col:first-child .card{
+    background-color: var(--color1);
+   
+}
+.why-us i{
+    font-size:2rem;
+    color: var(--color2);
+
+
+}
+.views{
+    text-align: center;
+}
+.views i{
+font-size:3rem;
+color: var(--color2);
+}
+.views h3{
+font-size:4rem;
+color: var(--color2);
+font-weight:700;
+}
