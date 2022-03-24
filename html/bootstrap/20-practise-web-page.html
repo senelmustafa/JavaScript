@@ -19,34 +19,31 @@
     <link rel="stylesheet" href="assets/css/20-practise.css">
   </head>
   <body>
+    <!-- TOPBAR -->
     <div class="topbar">
-
       <ul class="contact-info">
-            <li><i class="fa-solid fa-phone"></i> Tel: +440-98-5298</li>
-            <li><i class="fa-solid fa-envelope"></i> info@example.com</li>
-            <li><i class="fa-solid fa-map"></i> 121 King Street, Melbourne</li>
-          </ul>
-        
-        
-          <ul class="social-links">
-            <li>
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
+        <li><i class="fa-solid fa-phone"></i> <span class="d-none d-sm-inline">Tel: +440-98-5298</span></li>
+        <li><i class="fa-solid fa-envelope"></i> <span class="d-none d-sm-inline">info@example.com</span></li>
+        <li><i class="fa-solid fa-map"></i> <span class="d-none d-lg-inline">121 King Street, Melbourne</span></li>
+      </ul>
+      <ul class="social-links">
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </li>
+      </ul>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-xl navbar-light bg-light sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="assets/img/logo2.png" />
+          <img src="assets/img/logo2.png" width="400" />
         </a>
         <button
           class="navbar-toggler"
@@ -56,7 +53,7 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-                  >
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -85,9 +82,10 @@
       </div>
     </nav>
 
+    <!-- SLIDER -->
     <section
       id="carouselExampleCaptions"
-      class="carousel carousel-dark slide carousel-fade "
+      class="carousel carousel-dark slide carousel-fade"
       data-bs-ride="carousel"
     >
       <div class="carousel-indicators">
@@ -153,9 +151,10 @@
       </button>
     </section>
 
+   
     <section class="container why-us">
-      <div class="row">
-        <div class="col">
+      <div class="row g-3">
+        <div class="col-md-6 col-xl-3">
           <div class="card h-100">
             <div class="card-body">
               <h2>Why Choose Healty Life?</h2>
@@ -169,7 +168,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-md-6 col-xl-3">
           <div class="card h-100">
             <div class="card-body">
               <i class="fa-solid fa-flask"></i>
@@ -185,7 +184,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-md-6 col-xl-3">
           <div class="card h-100">
             <div class="card-body">
               <i class="fa-solid fa-laptop-medical"></i>
@@ -201,7 +200,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-md-6 col-xl-3">
           <div class="card h-100">
             <div class="card-body">
               <i class="fa-solid fa-circle-dollar-to-slot"></i>
@@ -219,7 +218,7 @@
     </section>
 
     <section class="container-fluid views">
-      <div class="row">
+      <div class="row g-3">
         <div class="col">
           <div class="card">
             <div class="card-body">
@@ -260,84 +259,87 @@
     </section>
 
     <section class="container gallery">
-      <div class="row">
-        <div class="col">
+      <div class="row g-3">
+        <div class="col-md-3">
           <img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" />
         </div>
-        <div class="col">
+        <div class="col-md-3">
           <img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" />
         </div>
-        <div class="col">
+        <div class="col-md-3">
           <img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" />
         </div>
-        <div class="col">
+        <div class="col-md-3">
           <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" />
         </div>
-        <div class="col">
+        <div class="col-md-3">
           <img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" />
         </div>
-        <div class="col">
+        <div class="col-md-3">
           <img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" />
         </div>
-        <div class="col">
+        <div class="col-md-3">
           <img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" />
         </div>
-        <div class="col">
+        <div class="col-md-3">
           <img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" />
         </div>
       </div>
     </section>
 
-    <section class="container appointment-form">
-      <h3>Make An Appointment</h3>
-      <form action="" method="post">
-        <div class="row">
-          <div class="col">
-            <label for="firstName" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="firstName" />
+    <section class="appointment-form">
+      <div class="container">
+        <h3>Make An Appointment</h3>
+        <form action="" method="post">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="firstName" />
+            </div>
+            <div class="col-md-6">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastName" />
+            </div>
+            <div class="col-md-6">
+              <label for="ssn" class="form-label">SSN</label>
+              <input type="text" class="form-control" id="ssn" />
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" />
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="text" class="form-control" id="phone" />
+            </div>
+            <div class="col-md-6">
+              <label for="datetime" class="form-label"
+                >Appointment DateTime</label
+              >
+              <input type="datetime" class="form-control" id="datetime" />
+            </div>
+            <div class="col-12 text-center">
+              <button class="btn btn-primary btn-lg">Send an Appointment Request</button>
+            </div>
+            <div class="col-12 text-center">
+              If you want to see your appointment and test result information, you
+              must register by using your SSN after appointment submission
+            </div>
           </div>
-          <div class="col">
-            <label for="lastName" class="form-label">Last Name</label>
-            <input type="text" class="form-control" id="lastName" />
-          </div>
-          <div class="col">
-            <label for="ssn" class="form-label">SSN</label>
-            <input type="text" class="form-control" id="ssn" />
-          </div>
-          <div class="col">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" />
-          </div>
-          <div class="col">
-            <label for="phone" class="form-label">Phone</label>
-            <input type="text" class="form-control" id="phone" />
-          </div>
-          <div class="col">
-            <label for="datetime" class="form-label"
-              >Appointment DateTime</label
-            >
-            <input type="datetime" class="form-control" id="datetime" />
-          </div>
-          <div class="col">
-            <button class="btn btn-primary">Send an Appointment Request</button>
-          </div>
-          <div class="col">
-            If you want to see your appointment and test result information, you
-            must register by using your SSN after appointment submission
-          </div>
-        </div>
-      </form>
+        </form>
+      </div>
+      
     </section>
 
     <footer>
       <section class="container">
-        <div class="row">
-          <div class="col">
+        <div class="row g-5">
+          <div class="col-md-4">
             <h3>Healty Life</h3>
             <p>Functional Medicine for a  Personalized, Patient-Centric and Scientific Approach!</p>
           </div>
-          <div class="col">
-            <ul>
+          <div class="col-md-4">
+            <ul class="menu">
               <li>
                 <a href="#">Home</a>
               </li>
@@ -358,8 +360,8 @@
               </li>
             </ul>
           </div>
-          <div class="col">
-            <ul>
+          <div class="col-md-4">
+            <ul class="contact">
                 <li>
                   <i class="fa-solid fa-address-card"></i> 471 N San Dimas Canyon
                   Rd San Dimas, California(CA), 91773
@@ -371,6 +373,7 @@
         </div>
       </section>
     </footer>
+
     <script src="assets/lib/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
