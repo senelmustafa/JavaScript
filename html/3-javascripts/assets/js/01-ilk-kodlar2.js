@@ -1,0 +1,1 @@
+console.log("bu satırlar harici html sayfasından geldi");
