@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <tr>
+            <td>
+                <input type="number" id="txtSayi1">
+            </td>
+            <td>
+                <input type="number" id="txtSayi2">
+            </td>
+            <td>
+                <button id="btnTopla" onclick="topla()" >TOPLA</button>
+            </td>
+        </tr>
+    </div>
+    <div id="lblSonuc" onclick="sonuc"> 
+    </div>
+
+    <script>
+function topla(){
+let sayi1=document.querySelector("#txtSayi1").value;
+let sayi2=document.querySelector("#txtSayi2").value;
+
+
+let sonuc=Number(sayi1) + Number(sayi2);
+document.querySelector("#lblSonuc").innerHTML=`Sonuc= <b> ${sonuc}</b>`;
+}
+        
+
+    </script>
+</body>
+</html>
