@@ -12,6 +12,12 @@
         .blue{
             background-color: blue;
         }
+        .orange{
+          background-color: orange;
+          color: white;
+          font-size: 4rem;
+          
+        }
     </style>
   </head>
   <body>
@@ -28,6 +34,7 @@
         stiller.add("red");
         document.querySelector("#baslik").classList.add("blue");
         document.querySelector("#baslik").classList.remove("red");
+        document.querySelector("#baslik").classList.add("orange");
         console.log(stiller);
         let name = document.querySelector("#txtName").value;
         document.querySelector("#mesaj").innerHTML = `Merhaba ${name}`;

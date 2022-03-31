@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label{
+        background-color:rgb(111, 114, 111);
+        color: white;
+        font-size:1rem;
+        width:100px;
+        height:30px;
+        display:inline-block;
+        align-content:center;
+      }
+    </style>
+  </head>
+  <body>
+    
+<input type="text" value="" id="sayi1">
+<select id="operation" onchange="count()">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+              
+            </select>
+<input type="text" value="" id="sayi2"> =
+<label id="sonuc">SONUÇ :</label><br>
+
+<input id="button1" type="button" value="HESAPLA" onclick="count()">
+
+<script>
+function count() {
+  var num1 = document.getElementById("sayi1").value;
+  var num2 = document.getElementById("sayi2").value;
+  var mod = document.getElementById("operation").value;
+
+  document.getElementById('sonuc').innerHTML = eval(num1 + mod + num2);
+
+  
+}
+</script>
+  </body>
+</html>

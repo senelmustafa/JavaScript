@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .icerik {
+      margin: 15%;
+    }
+    .renk {
+      border: 3px solid black;
+      width: 50%;
+      height: 50%;
+    }
+  </style>
+  <body>
+    <div class="icerik">
+      <input
+        id="sayi"
+        type="number"
+        placeholder="1 ile 5 arası bir sayı giriniz."
+      />
+      <button onclick="renkSec()">Sayı</button>
+      <button onclick="sil()">SİL</button>
+      <div class="renk"></div>
+    </div>
+    <script >
+      //kullanıcıdan 1 ile 5 arası seçtiği sayıya göre çerçeve alanının renginin değişmesi
+      //her sayı bir renge denk gelecek şekilde
+
+     function renkSec() {
+  let kullanciSayi = document.querySelector("#sayi").value;
+  switch (true) {
+    case kullanciSayi == 1:
+      kirmizi();
+      break;
+    case kullanciSayi == 2:
+      yesil();
+      break;
+    case kullanciSayi == 3:
+      mavi();
+      break;
+    case kullanciSayi == 4:
+      pembe();
+      break;
+    case kullanciSayi == 5:
+      gri();
+      break;
+    default:
+     
+     document.querySelector(
+        ".renk"
+      ).innerHTML = ` <b>LÜTFEN GEÇERLİ BİR SAYI GİRİNİZ</b>`;
+  }
+  function kirmizi() {
+    let kirmizi = document.querySelector(".renk");
+    kirmizi.style.background = "red";
+  }
+  function yesil() {
+    let yesil = document.querySelector(".renk");
+    yesil.style.background = "green";
+  }
+  function mavi() {
+    let mavi = document.querySelector(".renk");
+    mavi.style.background = "blue";
+  }
+  function pembe() {
+    let pembe = document.querySelector(".renk");
+    pembe.style.background = "pink";
+  }
+  function gri() {
+    let gri = document.querySelector(".renk");
+    gri.style.background = "gray";
+  }
+}
+function sil() {
+  document.querySelector(".renk").innerHTML = "";
+}
+    </script>
+  </body>
+</html>

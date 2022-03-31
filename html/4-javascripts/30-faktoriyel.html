@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="txtSayi" placeholder="Bir sayı giriniz" min="0">
+    <button onclick="hesapla()">Hesapla</button>
+    <div id="sonuc"></div>
+
+    
+    
+    <script >
+
+       const hesapla = () => {
+    const sayi = document.querySelector('#txtSayi').value;
+    if(!sayi || isNaN(sayi) || sayi<0){
+        alert("Pozitif bir tamsayı giriniz");
+        return;
+    }
+    let carpim = 1;
+    for(let i=sayi; i>0; i--){
+        carpim = carpim * i;
+    }
+    document.querySelector("#sonuc").innerText = carpim;
+}
+
+
+        
+    </script>
+</body>
+</html>

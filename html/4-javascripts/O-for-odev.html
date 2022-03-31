@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size:2rem;
+        }
+        span{
+            color: rgb(255, 4, 4);
+            display: blok;
+        }
+    </style>
+</head>
+<body>
+     <input type="text" id="sayi1" />
+     <input type="text" id="sayi2" />
+     
+     <input class="btn" type="button" value="UYGULA" onclick="indirim()" /> 
+    
+    <ul>
+        <li>Notebook <span id="sonuc">1000</span>$</li>
+        <li>Monitor <span class="sonuc"></span>$</li>
+        <li>Klavye<span class="sonuc"></span>$</li>
+        <li>Mouse<span class="sonuc"></span>$</li>
+    </ul>
+    
+
+    <script type="text/javascript">
+        function indirim() {
+        let sayi1=document.querySelector("#sayi1").value;
+        let sayi2=document.querySelector("#sayi2").value;
+    //    let sonuc=Number(document.querySelector("#sonuc").value);
+        let sonuc1=(sayi1)*(sayi2)*Number(sonuc);
+        
+ 
+        
+        document.querySelector("#sonuc").innerHTML=`${sonuc1}`;
+        }
+    </script>
+</body>
+</html>

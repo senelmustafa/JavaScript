@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="sayi1" />
+    
+    <select option id="+">
+      <option selected value="">Seçiniz</option>
+
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <input type="text" id="sayi2" />
+    <input class="btn" type="button" value="UYGULA" onclick="sonuc()" />
+    <h1 id="sonuclar">    </h1>
+
+
+    <script type="text/javascript">
+        function sonuc(){
+            let a1=document.querySelector("#sayi1").value;
+            let a2=document.querySelector("#sayi2").value;
+            let opt=dokument.querySelector("#option").value;
+            let sonuc;
+            switch (true) {
+                case opt=="+":
+                    sonuc=a1+a2;
+                    break;
+                 case opt=="-":
+                    sonuc=a1-a2;
+                    break;
+                 case opt=="*":
+                    sonuc=a1*a2;
+                    break;
+                 case opt=="/":
+                    sonuc=a1/a2;
+                    break;
+                default:
+                    document.querySelector("#sonuclar").innerHTML=sonuc;
+                    break;
+            }
+
+        }
+    </script>
+  </body>
+</html>

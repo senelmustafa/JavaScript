@@ -1,92 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css">
-	<link rel="stylesheet" href="bootstrap/assets/lib/bootstrap-5.1.3-dist/js/bootstrap.min.js">
-<script>	
-</script>
-
-	<style>
-	
-	.vertical .carousel-inner {
-  height: 100%;
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+body {
+  cursor: pointer;
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: brown;
+    color: black;
+  }
+  
+.light-mode {
+background-color: gainsboro;
+color: yellow;
 }
-
-.carousel.vertical .item {
-   -webkit-transition: 0.6s ease-in-out top;
-   -moz-transition: 0.6s ease-in-out top;
-   -ms-transition: 0.6s ease-in-out top;
-   -o-transition: 0.6s ease-in-out top;
-   transition: 0.6s ease-in-out top;
-}
-
-.carousel.vertical .active {
-   top: 0;
-}
-
-.carousel.vertical .next {
-   top: 400px;
-}
-
-.carousel.vertical .prev {
-   top: -400px;
-}
-
-.carousel.vertical .next.left,
-.carousel.vertical .prev.right {
-   top: 0;
-}
-
-.carousel.vertical .active.left {
-   top: -400px;
-}
-
-.carousel.vertical .active.right {
-   top: 400px;
-}
-
-.carousel .vertical .item {
-   left: 0;
-}
-	</style>
+  </style>
 </head>
 <body>
-	<div class="container">
-    <div class="row-fluid">
-        <div class="span6 offset3">
-            <div id="myCarousel" class="carousel slide vertical">
-                <!-- Carousel items -->
-                <div class="carousel-inner">
-                    <div class="active item">
-                        <img src="https://mixkit.imgix.net/videos/preview/mixkit-man-wearing-virtual-reality-glasses-176-0.jpg?q=80&auto=format%2Ccompress&w=460&amp;text=First+Slide">
-                    </div>
-                    <div class="item">
-                        <img src="https://mixkit.imgix.net/videos/preview/mixkit-eye-of-a-woman-looking-at-a-tablet-41180-0.jpg?q=80&auto=format%2Ccompress&w=460&amp;text=Second+Slide">
-                    </div>
-                    <div class="item">
-                        <img src="https://mixkit.imgix.net/videos/preview/mixkit-hands-of-a-man-typing-on-a-laptop-4827-0.jpg?q=80&auto=format%2Ccompress&w=460&amp;text=Third+Slide">
-                    </div>
-                </div>
-                <!-- Carousel nav -->
-                <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
-                <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
-            </div>
-        </div>
-    </div>
-</div>
-	
-	
-	
-	<script>
-
-		$('.carousel').carousel({
-   interval: 3000
-})
-	</script>
- 
+  <table class="T" border="1"  width="700">
+    <tr>
+      <th></th>
+      <th id="D" onclick="DarkMode()">Dark  Mode</th>
+      <th id="L" onclick="lightMode()">Light Mode</th>
+    </tr>
+    <tr>
+      <td>Page background color</td>
+      <td>black</td>
+      <td>white</td>
+    </tr>
+    <tr>
+      <td>Page text color</td>
+      <td>white</td>
+      <td>Black</td>
+    </tr>
+    <tr>
+      <td>Button background color</td>
+      <td>white</td>
+      <td>Black</td>
+    </tr>
+    <tr>
+      <td>Button text color</td>
+      <td>black</td>
+      <td>White</td>
+    </tr>
+  </table>
+<script>
+function DarkMode() {
+    var element = document.querySelector(".T");
+    element.classList.toggle("dark-mode");
+      document.getElementById("D").innerHTML = " Light Mode ";
+   
+    
+  }
+  
+  function lightMode() {
+    var element2 = document.querySelector(".T");
+    element2.classList.toggle("light-mode");
+    document.getElementById("L").innerHTML = "Light Mode";
+  }
+</script>
 </body>
 </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(255, 255, 255);
+        color: rgb(14, 13, 13);
+        border-radius: 100px;
+      }
+      h1 {
+        border-radius: 100px 100px 100px 100px;
+        background-color: rgb(44, 43, 43);
+        height: 80px;
+        width: 200px;
+        font-size: 2rem;
+        margin: 10px;
+        padding: 50px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      .tikla {
+        background-color: rgb(2, 2, 2);
+        color: rgb(255, 253, 253);
+      }
+      img {
+        width: 100vh;
+        margin:0px;
+        padding:0px;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 type="button" onclick="acKapa()" btn btn-primary>A Ç /K A P A</h1>
+      <img src="assets/img/pngegg (81).png" />
+    </div>
+
+    <script type="text/javascript">
+      function acKapa() {
+        var element = document.body;
+        element.classList.toggle("tikla");
+      }
+    </script>
+  </body>
+</html>
