@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+const meyveler=["elma","armut","muz","kivi"];
+
+ meyveler.pop();
+ console.log(meyveler);
+ meyveler.push("ananas");
+console.log(meyveler);
+meyveler.shift();
+console.log(meyveler);    
+
+meyveler.unshift("çilek");
+console.log(meyveler); 
+
+meyveler.reverse();
+console.log(meyveler); 
+
+meyveler.sort();
+console.log(meyveler); 
+
+meyveler.sort((a,b)=>a.localeCompare(b,'tr')).reverse();
+console.log(meyveler); 
+
+meyveler.splice(0,1,"mustafa");
+console.log(meyveler); 
+
+const sayilar=[5,15,2,167];
+sayilar.sort((a,b) => a-b);
+console.log(sayilar); 
+
+    </script>
+</body>
+</html>

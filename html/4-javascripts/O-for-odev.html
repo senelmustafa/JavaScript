@@ -18,28 +18,31 @@
 </head>
 <body>
      <input type="text" id="sayi1" />
-     <input type="text" id="sayi2" />
-     
      <input class="btn" type="button" value="UYGULA" onclick="indirim()" /> 
     
-    <ul>
-        <li>Notebook <span id="sonuc">1000</span>$</li>
-        <li>Monitor <span class="sonuc"></span>$</li>
-        <li>Klavye<span class="sonuc"></span>$</li>
-        <li>Mouse<span class="sonuc"></span>$</li>
+    <ul id="liste">
+        <li>Notebook <span >1000</span>$</li>
+        <li>Monitor <span>500</span>$</li>
+        <li>Klavye<span >400</span>$</li>
+        <li>Mouse<span >300</span>$</li>
     </ul>
     
 
     <script type="text/javascript">
+
         function indirim() {
-        let sayi1=document.querySelector("#sayi1").value;
-        let sayi2=document.querySelector("#sayi2").value;
-    //    let sonuc=Number(document.querySelector("#sonuc").value);
-        let sonuc1=(sayi1)*(sayi2)*Number(sonuc);
+        let liste=document.querySelectorAll("#liste li span");
+        let indir=document.querySelector("#sayi1").value;
+     
+            for(let i=0 ;i<liste.length; i++){
+                let fiyat=Number(liste[i].innerText);
+                liste[i].innerText=fiyat-fiyat*indir/100;
+            }
+   
         
  
         
-        document.querySelector("#sonuc").innerHTML=`${sonuc1}`;
+      
         }
     </script>
 </body>

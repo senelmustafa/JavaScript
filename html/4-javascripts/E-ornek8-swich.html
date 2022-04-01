@@ -1,0 +1,87 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(44, 44, 44);
+      font-size: 1rem;
+      color: white;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .icerik {
+      margin: 15%;
+    }
+    .mesaj {
+      margin: 20%;
+      width: 30%;
+      height: 15%;
+      background-color: rgb(36, 160, 164);
+      border-radius: 15%;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 2rem;
+    }
+    .mesaj::before {
+      content: "🎞️";
+    }
+  </style>
+  <body>
+    <div class="icerik">
+      <input type="text" id="ad" placeholder="Lütfen adınızı giriniz." />
+      <input type="button" value="Tavsiye Film" onclick="mesaj()" />
+      <input type="button" value="Yenile" onclick="yenile()" />
+      <div id="msj"></div>
+    </div>
+
+    <script>
+     //Kullanıcıdan alınan ismin uzunluğuna göre tavsiye film verelim
+const mesaj = () => {
+  let isim = document.querySelector("#ad").value.length;
+  switch (true) {
+    case isim == 3:
+      document.querySelector(
+        "#msj"
+      ).innerHTML = ` <b>Önerimiz:Interstaller</b>`;
+      break;
+    case isim == 4:
+      document.querySelector("#msj").innerHTML = ` <b>Önerimiz:The Intern</b>`;
+      break;
+    case isim == 5:
+      document.querySelector("#msj").innerHTML = ` <b>Önerimiz:Inception</b>`;
+      break;
+    case isim == 6:
+      document.querySelector("#msj").innerHTML = ` <b>Önerimiz:The Pianist</b>`;
+      break;
+    case isim == 7:
+      document.querySelector(
+        "#msj"
+      ).innerHTML = ` <b>Önerimiz:A Beautiful Mind</b>`;
+      break;
+    case isim == 8:
+      document.querySelector(
+        "#msj"
+      ).innerHTML = ` <b>Önerimiz:Forrest Gump</b>`;
+      break;
+    case isim == 9:
+      document.querySelector("#msj").innerHTML = ` <b>Önerimiz:Truman Show</b>`;
+      break;
+    default:
+      document.querySelector(
+        "#msj"
+      ).innerHTML = ` <b>Önerimiz:İsminizi 10 harfi geçmeyecek şekilde yazın.</b>`;
+  }
+  document.querySelector("#msj").classList.add("mesaj");
+  return;
+};
+const yenile = () => {
+  document.querySelector("#msj").innerHTML = "";
+  document.querySelector("#msj").classList.remove("mesaj");
+};
+
+    </script>
+  </body>
+</html>
