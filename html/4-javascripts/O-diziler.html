@@ -7,12 +7,29 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1 id="sonuc"></h1>
+    <h2 id="sonuc2"></h2>
     <script>
 
-        const fiyatlar=[123,5666,126,68];
+        const hesapla=[10,-10,50,-50,25,10,-10];
+        var toplam=0;
+     /*   for(let i=0; i<sayi.length; i++){
+            if(isNaN(sayi[i])){
+                continue;
+            }
+            toplam+=Number(sayi[i]);
+        }
+       document.querySelector("#sonuc").innerHTML=`${toplam}`;
+         */
 
-        function artir
+        hesapla.forEach(function(e){  
+            toplam+=Number(e);
+        });
+      console.log(toplam);
+        document.querySelector("#sonuc2").innerHTML=`${toplam}`;
+
+
+        
     </script>
 </body>
 </html>
