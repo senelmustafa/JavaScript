@@ -28,27 +28,18 @@
         console.log(meyveler);
         meyveler.sort( (a,b) =>  a.localeCompare(b, 'tr')).reverse();
         console.log(meyveler);
-​
-        meyveler.splice(2,0,"Ayva","Elma","Muz");
+​        meyveler.splice(2,0,"Ayva","Elma","Muz");
         console.log(meyveler);
-​
-​
-        document.querySelector("#baslik").innerHTML = "<option>" + meyveler.join("</option><option>") + "</option>";
-​
-​
-​
-​
+​      document.querySelector("#baslik").innerHTML = "<option>" + meyveler.join("</option><option>") + "</option>";
+
         const sayilar = [5, 14, 2, 167];
         
         sayilar.sort( (a,b) => a-b );
-​
-        console.log(sayilar);
-​
-​
+
+          window.alert(sayilar);
+
         const yeniDizi = meyveler.concat(sayilar, "M", "Ş", ["Ali", "Veli", "Ayşe"]);
         console.log(yeniDizi);
-​
-​
     </script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1 id="sonuc"></h1>
+<h2 id="sonuc2"></h2>
+<body>
+
+    <script type="text/javascript">
+
+        const fiyatlar=[123,5666,126,67]
+        //%20 artıracağız..
+    for (var i=0; i<fiyatlar.length ;i++){
+        fiyatlar[i]=Math.floor(fiyatlar[i]*1.2);
+        
+    }
+document.querySelector("#sonuc").innerHTML=`fiyatlar=[${fiyatlar}]`;
+ //2.yönetem Map    
+var yeniDizi=fiyatlar.map(function(deger){
+return deger*1.2;
+
+});
+document.querySelector("#sonuc2").innerHTML=`fiyatlar=[${fiyatlar}]`;
+     </script>
+
+</body>
+</html>

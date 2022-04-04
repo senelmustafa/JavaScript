@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="sonuc"></h2>
+    <h2 id="sonuc2"></h2>
+    <h2 id="sonuc3"></h2>
+    <script>
+      const hesapla = [10, -10, 50, -50, 25, 10, -10];
+      var toplam = 0;
+      //1.yöntem
+      for (let i = 0; i < hesapla.length; i++) {
+        if (isNaN(hesapla[i])) {
+          continue;
+        }
+        toplam += Number(hesapla[i]);
+      }
+      document.querySelector("#sonuc").innerHTML = `${toplam}`;
+      //2.yöntem
+      var toplam=0;
+      hesapla.forEach(function (e) {
+      toplam += Number(e);
+      });
+      console.log(toplam);
+      document.querySelector("#sonuc2").innerHTML = `${toplam}`;
+
+      //3.yöntem
+
+      const topla =(a,b)=>  a+b;
+      const topla2=hesapla.reduce(topla)
+       document.querySelector("#sonuc3").innerHTML = `${topla2}`;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="sonuc"></span>
+    <span id="sonuc2"></span>
+
+    <script type="text/javascript">
+
+        const ucretler=[10,50,101,200,15];
+        //100 den fazla olanları %10 zam
+        //%100 az olanlara %15 zam
+        //zamlı olanları yeni bir dizide saklamak isteniyor
+   
+        const zam=ucretler.map(function(artis) {
+
+            if(artis>100){
+              return Math.floor( artis*1.1)
+            }else if(artis<100){
+             return  Math.floor( artis*1.5)
+            }
+        });
+      //  console.log(`${zam}`);
+        
+        document.querySelector("#sonuc").innerHTML=`<h2>Ücretler ${ucretler} iken</h2> <br>`;
+        document.querySelector("#sonuc2").innerHTML= `<h1>Bu ay maaşınıza zamn yaptık ${zam} <br>daha iyi haber işinize son vermedik </h1>` ;
+      
+//toFixed(2)
+//fiyat>100 ? fiyat*1.10 : fiyat *1.15
+
+     </script>
+
+</body>
+</html>
