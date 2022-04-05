@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <span id="sonuc"></span>
     <script>
         const tlFiyatlar = [100, 150, 100, 50, 80, 562, 10, 32];
         
@@ -22,10 +22,11 @@
         });
         // Tek satırlı versiyon
         const yeniFiyatlar2 = tlFiyatlar.map(fiyat => fiyat>100 ? (fiyat*1.10).toFixed(2) : (fiyat*1.15).toFixed(2));
-       
+        const yenifiyatlar3=tlFiyatlar.map(fiyat=>fiyat>100 ? (fiyat*1.10).toFixed(2):(fiyat*1.15).toFixed(2));
         console.log(tlFiyatlar);
         console.log(yeniFiyatlar);
         console.log(yeniFiyatlar2);
+        document.querySelector("#sonuc").innerHTML = yenifiyatlar3;
     </script>
 </body>
 </html>

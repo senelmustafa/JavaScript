@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script type="text/javascript">
+        const koordinatlar = [-100, 150, -32, 43, -20];
+
+        if(koordinatlar.some(item=>item>100)){
+            console.log("en az bir eleman 100 den büyük");
+        }else{
+            console.log("hiç bir eleman 100 den büyük değil");
+        }
+          if(koordinatlar.some(item=>item<0)){
+            console.log("tüm elemanlar negatif");
+        }else{
+            console.log("hiç bir eleman 100 den büyük değil");
+        }
+        </script>
+</body>
+</html>
