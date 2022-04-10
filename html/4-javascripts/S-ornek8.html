@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <table id="liste" class="table">
+        <thead>
+          <tr>
+            <th>İsim</th>
+            <th>Yas</th>
+            <th>Maas</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <input type="button" value="Çıkış" id="btn" class="mb-5" />
+    </div>
+    
+    <script type="text/javascript">
+        const bilgiler=[
+            {isim:"Mustafa Ş", yas:33, maas:3000},
+            {isim:"ayberk Ş", yas:33, maas:3000},
+            {isim:"aybuke Ş", yas:33, maas:3000},
+            {isim:"aysel Ş", yas:33, maas:3000},
+            {isim:"abbas Ş", yas:33, maas:3000},
+            {isim:"esme Ş", yas:33, maas:3000},
+            {isim:"kadir Ş", yas:33, maas:3000},
+            {isim:"zeynep Ş", yas:33, maas:3000},
+
+        ];
+   let satir = "";
+for (bilgi of bilgiler) {
+  satir += ` <tr>
+ <td>${bilgi.isim}</td>
+ <td>${bilgi.yas}</td>
+ <td>${bilgi.maas}</td>
+</tr>`;
+}
+       document.querySelector("#liste tbody").innerHTML = satir;
+//b.maaşı 5000den büyük olanların satırlarının rengini değiştirelim.
+const satirlar = document.querySelectorAll("#liste tbody tr");
+for (satir of satirlar) {
+  const maas = satir.querySelector("td:last-child").innerText;
+  if (maas > 5000) {
+    satir.classList.add("table-success");
+  }
+}
+       const ortalama = bilgiler.reduce((x, y) => x + y.maas, 0) / bilgiler.length;
+const altSatir = document.createElement("div");
+altSatir.innerText = ortalama;
+altSatir.setAttribute("class", "card");
+document.querySelector(".table").append(altSatir);
+        
+        
+        const baslik=document.createElement("h1");
+        baslik.innerText="PERSONEL";
+    </script>
+</body>
+</html>
