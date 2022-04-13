@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Başlığı</title>
+    <style>
+         
+    </style>
+</head>
+<body>
+  <ul class="liste">
+    <li id="walterwhite">Walter White</li>
+    <li class="alternate">Jesse Pinkman</li>
+    <li>Skyler White</li>
+    <li class="alternate">Hank Schrader</li>
+    <li>Gustavo Fring</l>
+  </ul>
+
+  <input type="text" id="veri">
+<button id="ekle">Listeye Öğe Ekle</button>
+
+
+
+<script type="text/javascript">
+
+    var one=document.querySelector("#walterwhite");
+var two  = document.getElementsByClassName("alternate");
+
+    
+for (var i = 0; i < two.length; i++) { 
+     two[i].style.color  = "red"; 
+}
+   var liste = document.querySelector("ul");
+
+var urun = document.querySelector("#veri"); 
+var ekle = document.querySelector("#ekle");
+
+  ekle.addEventListener("click",function(){
+  // createElement ile yeni bir listItem (li) oluşturuyoruz
+  var li=document.createElement("li"); 
+  
+  // Input ile gelen veriyi "li" içerisine metin olarak giriyoruz.
+  li.textContent=veri.value; 
+  
+  // appendChild ile oluşturduğumuz elementi "liste" isimli değişkenimizin içerisine ekliyoruz.
+  liste.appendChild(li);
+              
+  // Veri inputu içerisindeki metni siliyoruz.
+  veri.value = "";
+});
+
+
+
+
+</script>
+  </body>
+</html>

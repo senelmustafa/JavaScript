@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" class="input-text" placeholder="Bir kelime gir.." />
+      <button class="btn">Kontrol</button>
+      <p class="result"></p>
+    </div>
+    <script >
+        const word = document.querySelector(".input-text");
+const btn = document.querySelector(".btn");
+const result = document.querySelector(".result");
+function countVowel() {
+  let vowelCount = 0;
+  let wordVal = word.value.toLocaleLowerCase("tr");
+  for (let i = 0; i < wordVal.length; i++) {
+    let letter = wordVal[i];
+    if (letter.match(/([a,e,ı,i,o,ö,u,ü])/)) vowelCount++;
+  }
+  result.innerHTML = `${word.value.toUpperCase()} kelimesi ${vowelCount} ünlü harf içeriyor.`;
+}
+btn.addEventListener("click", countVowel);
+
+    </script>
+  </body>
+</html>

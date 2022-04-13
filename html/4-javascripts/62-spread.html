@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function topla(s1,s2,s3,s4){
+            return s1+s2+s3+s4;
+        }
+        const sayilar=[14,54,66,1];
+
+        const sonuc=topla(...sayilar);
+        
+      //  alert(sonuc);
+
+        const dizi=[12,45,67,23,76];
+        const sabit=12;
+        const dizi2=[12,65,88];
+        
+        const yeniDizi=[...dizi,sabit,...dizi2,15];
+       // alert(yeniDizi);
+
+
+
+
+        const student ={
+            no:1234,
+            adi:'Mustafa',
+            soyadi:'malatya',
+        };
+        //alert(student.adi);
+        const sayi=5;
+
+        const yeniSayi=sayi;
+
+        const newStudent =student;
+        newStudent.adi="Hasan";
+
+        const newerStudent={...student,dogunTarihi:"10.10.2022",no:15432};
+        newerStudent.adi="Kamil";
+        
+        console.log(newerStudent);
+
+        </script>
+</body>
+</html>
