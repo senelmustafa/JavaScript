@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="goster"> </div>
+
+    <script type="text/javascript">
+        function getData(){
+            setTimeout(()=>{
+            console.log("ok2");
+            },500);
+        }
+        let a=console.log("ok1");
+        let b=(getData());      
+        let c= (console.log("ok3"));
+
+document.querySelector("#goster").innerText =`${a} ${b} ${c} `;
+     </script>
+</body>
+</html>
