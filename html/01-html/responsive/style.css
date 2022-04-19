@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed:wght@300;400;700&family=Square+Peg&display=swap');
+*,
+*::before,
+*::after{
+    margin:0;/* içerden taşmasın*/
+    padding:0;/*dışarıdan taşmasın */
+    border:0; 
+    box-sizing: border-box;/*taşmasını engeller*/
+    color: rgb(255, 255, 255);
+}
+ul{
+    display: flex;
+    
+}
+li{
+    list-style: none;/*başlarında noktalarıı gitti*/
+    margin-left:30px;
+    
+}
+a,
+a:link, 
+a:visited{ 
+    text-decoration: none;
+    outLine: none;
+    font-size: 20px;
+    
+}
+.logo{
+    font-size:35px;
+    letter-spacing:5px;
+}
+.header{
+background-image: url("1.jpg");
+background-position: center;/*ortalansın*/
+background-size: cover;/*tüm ekran kapla*/
+background-attachment: fixed;/*sabitlensin*/
+height:100vh;/*ekranı kaydırmadan sayfaya yerleştirir*/
+font-family: 'Square Peg',cursive;
+
+}
+.header-navbar{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.header-text{
+    position:absolute;
+    top:25%;
+    left:10px;
+    width:80%;
+    font-family: 'Lobster',    cursive;
+
+}
+h1{ 
+font-size:2rem5rem;
+}
+.social{
+    max-width: 1170px;
+    margin:0 auto;
+    text-align: right;
+}
+.social i{
+    margin:15px;
+}
+.social i:hover {
+    opacity: 0.8;
+    cursor:pointer;
+}
+.container{
+    max-width: 1170px;
+    margin:0 auto;
+    
+}
+@media only screen and (max-width:1000px){
+.social{
+    text-align: center;
+}
+.container{
+    text-align: center;
+    margin-top: 0;
+}
+.header-navbar{
+    flex-direction: column;/*aynı sütündaymış gibi sıralar*/
+}
+.header-text{
+width:96%;
+}
+
+}
+
+@media only screen and (max-width:768px){
+    ul{
+        flex-direction: column;
+    }
+}
