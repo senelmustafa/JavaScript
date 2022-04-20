@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="isim"><br/><br/>
+    <input type="text" id="sisim">
+    <button   id="gonder" type="submit">GÖNDER</button>
+    <div class="yaz"></div>
+    <div class="yaz2"></div>
+    <script>
+        var yaz=document.querySelector("#yaz");
+        var yaz2=document.querySelector("#yaz2");
+
+        var buttonEkle=document.querySelector("gonder");
+        var isim=document.querySelector("#isim");
+        var isim2=document.querySelector("#sisim");
+
+        btnEkle.onclick=function(){
+            var eleman=document.createElement("li");
+            eleman.innerText=isim.value;
+            yaz.append(eleman);
+        }
+
+        
+        
+        
+    </script>
+    
+    
+    
+</body>
+</html>
