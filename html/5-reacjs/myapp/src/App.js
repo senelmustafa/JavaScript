@@ -8,6 +8,8 @@ import StyleInline from "./components/07-style-inline";
 import StyleInternal from "./components/08-style-internal";
 import StyleExternal from "./components/09-style-external";
 import Clock1 from "./components/10-clock/10-clock1";
+import Clock2 from "./components/10-clock/12-clock2 copy";
+import Props from "./components/props/11-props";
 
 
 
@@ -22,8 +24,13 @@ const  App=()=> {
        <JsxPractise/>
        <StyleInline/>
        <StyleInternal/>
-       <StyleExternal/>*/}
-       <Clock1/>
+       <StyleExternal/>
+       <Clock1/>*/}
+       <Props ad="Metin" yas="33"/>
+       <Clock2 color="yellow" bgColor="red"/>
+       <Clock2 color="blue" bgColor="yellow"/>
+         <Clock2 color="white" bgColor="black"/>
+          
            </div>
   );
 }
