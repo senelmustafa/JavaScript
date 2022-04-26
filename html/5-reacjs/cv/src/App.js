@@ -6,16 +6,20 @@ import About from './components/about/about';
 import Quote from './components/quote/quote';
 import Skills from './components/skills/skills';
 import Experiences from './components/experience/experiences';
+import Card from './comp2/1-card/Card';
 
 function App() {
   return (
     <>
+{/* 
    <Header/>
    <Slider/>
    <About/>
    <Quote/>
    <Skills/>
    <Experiences/>
+    */}
+    <Card/>
     </>
   );
 }

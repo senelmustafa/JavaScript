@@ -13,6 +13,7 @@ import Image from "./components/13-image";
 import ProfileCard from "./components/15-card/15-profile-card";
 import BootstrapStatic from "./components/16-bootstrap-static";
 import BootstrapDinamik from "./components/17-bootstrap-dinamik";
+import Shop from "./components/18-bootstrap-practise/shop";
 import ImagePractise from "./components/ImagePractise";
 import Props from "./components/props/11-props";
 
@@ -49,9 +50,11 @@ const  App=()=> {
        followers="4532"
        followings="50" /> 
 
-       <BootstrapStatic/>*/}
+       <BootstrapStatic/>
        
-      <BootstrapDinamik/>
+      <BootstrapDinamik/>*/}
+      <Shop/>
+
            </div>
   );
 }

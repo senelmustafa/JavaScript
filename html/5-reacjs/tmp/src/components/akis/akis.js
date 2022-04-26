@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react' 
 import { Carousel } from 'react-bootstrap'
 import arka1 from "../akis/arka1.jpg";
 import arka2 from "../akis/arka2.jpg";
