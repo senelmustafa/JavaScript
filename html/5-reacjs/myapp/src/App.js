@@ -14,6 +14,11 @@ import ProfileCard from "./components/15-card/15-profile-card";
 import BootstrapStatic from "./components/16-bootstrap-static";
 import BootstrapDinamik from "./components/17-bootstrap-dinamik";
 import Shop from "./components/18-bootstrap-practise/shop";
+import Statteless from "./components/19-stateless";
+import Counter from "./components/20-counter";
+import Birthday from "./components/22-birthday/birthday";
+import UseEffect from "./components/22-useEffect";
+import Clock3 from "./components/23-clock/10-clock1";
 import ImagePractise from "./components/ImagePractise";
 import Props from "./components/props/11-props";
 
@@ -52,9 +57,14 @@ const  App=()=> {
 
        <BootstrapStatic/>
        
-      <BootstrapDinamik/>*/}
+      <BootstrapDinamik/>
       <Shop/>
+      <Statteless/>
+      <Counter/>
+        <Birthday/>
 
+        <UseEffect/>*/}
+      <Clock3/>
            </div>
   );
 }
