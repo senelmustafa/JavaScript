@@ -7,10 +7,7 @@ const Person = ({ name, age, image }) => {
         <Card className="d-flex mb-5">
             <Row>
                 <Col md={4}>
-                    <Card.Img
-                        variant="top"
-                        src={require(`/${image}`)}
-                    />
+                    <Card.Img variant="top" src={require(`./${image}`)}/>
                 </Col>
                 <Col md={8}>
                     <Card.Body>

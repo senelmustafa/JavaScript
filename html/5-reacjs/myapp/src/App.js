@@ -16,56 +16,65 @@ import BootstrapDinamik from "./components/17-bootstrap-dinamik";
 import Shop from "./components/18-bootstrap-practise/shop";
 import Statteless from "./components/19-stateless";
 import Counter from "./components/20-counter";
+import Birthday1 from "./components/S-birthday copy/birthday";
 import Birthday from "./components/22-birthday/birthday";
 import UseEffect from "./components/22-useEffect";
 import Clock3 from "./components/23-clock/10-clock1";
 import ImagePractise from "./components/ImagePractise";
 import Props from "./components/props/11-props";
+import ProfilCard from "./components/S-Card/ProfilCard";
+import Info from "./components/S-Card/Info";
+import UserCards from "./components/27-user-cards.js/UserCards";
+import Country from "./components/28-countries/Country";
+ 
 
 
 
 
 
-const  App=()=> {
+const App = () => {
   return (
     <div >
-     {/* <h2>bu benim ilk çalışmam </h2>
-        <HelloWorld/>
-       <Comp/> 
-       <Jsx/>
-       <Jsx2/> 
-       <JsxPractise/>
-       <StyleInline/>
-       <StyleInternal/>
-       <StyleExternal/>
-       <Clock1/>*/}
-       {/* <Props ad="Metin" yas="33"/>
-       <Clock2 color="yellow" bgColor="red"/>
-       <Clock2 color="blue" bgColor="yellow"/>
-         <Clock2 color="white" bgColor="black"/> 
-                    <Image/>
-                   
-      <ImagePractise/>
- */}
-      {/* <ProfileCard
-       name="Ali Gel" 
-       location="istanbul,Türkiye"
-       avatar="profile.jpg" 
-       shot="4" 
-       followers="4532"
-       followings="50" /> 
+      
+     {/*  <HelloWorld />
+      <Comp />
+      <Jsx />
+      <Jsx2 />
+      <JsxPractise />
+      <StyleInline />
+      <StyleInternal />
+      <StyleExternal />
+      <Clock1 />
+      <Props ad="Metin" yas="33" />
+      <Clock2 color="yellow" bgColor="red" />
+      <Clock2 color="blue" bgColor="yellow" />
+      <Clock2 color="white" bgColor="black" />
+      <Image />
 
-       <BootstrapStatic/>
-       
-      <BootstrapDinamik/>
-      <Shop/>
-      <Statteless/>
-      <Counter/>
-        <Birthday/>
+      <ImagePractise />
+      <BootstrapStatic />
 
-        <UseEffect/>*/}
-      <Clock3/>
-           </div>
+      <BootstrapDinamik />
+      <Shop />
+      <Statteless />
+      <Counter />
+      <Birthday />
+
+      <UseEffect />
+      <Clock3 />
+      <Birthday1 />
+      <ProfileCard
+        name="Ali Gel"
+        location="istanbul,Türkiye"
+        avatar="profile.jpg"
+        shot="4"
+        followers="4532"
+        followings="50" /> 
+      <Info/>
+     
+       <UserCards/>  */}
+      <Country/>
+    </div>
   );
 }
 
