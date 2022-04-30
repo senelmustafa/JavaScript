@@ -25,7 +25,7 @@ import Props from "./components/props/11-props";
 import ProfilCard from "./components/S-Card/ProfilCard";
 import Info from "./components/S-Card/Info";
 import UserCards from "./components/27-user-cards.js/UserCards";
-import Country from "./components/28-countries/Country";
+import Countries from "./components/28-countries/countries";
  
 
 
@@ -73,7 +73,7 @@ const App = () => {
       <Info/>
      
        <UserCards/>  */}
-      <Country/>
+      <Countries/>
     </div>
   );
 }
