@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Note from "./note";
+import Note from "./note.js";
 
 const Notes = ({ data }) => {
     return (
