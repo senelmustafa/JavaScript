@@ -3,6 +3,7 @@ import Akis from "./components/akis/akis";
 import Bders from "./components/Bders";
 import Cders from "./components/Cders";
 import Cards from "./components/comp4/Cards";
+import Bitis from "./components/comp6/Bitis";
 import Clock from "./components/S-clock/1-clock";
 import Kisi from "./components/student/Kisi";
 import Kurs from "./components/student/Kurs";
@@ -17,29 +18,30 @@ function App() {
     <Aders/>
     <Bders/>
     <Cders/>
-     */}
      
-    {/* <Clock adi="Mustafa" soyadi="Şenel" yas="40" />
+     
+   <Clock adi="Mustafa" soyadi="Şenel" yas="40" />
     <Clock adi="Mustafa" soyadi="Şenel" yas="40" />
     <Clock adi="Mustafa" soyadi="Şenel" yas="40" /> 
-<Kurs/>*/}
+<Kurs/>
     
-    {/* <div className="card">
+     <div className="card">
       {" "}
       {student.map((student, index) => {
         const { isim, img, yas, kurs } = student;
         return <Kisi key={index} ad={isim} img={img} yas={yas} kurs={kurs}/>;
       })}
-    </div> */}
-    {/* <div className="yanyana">
+    </div> 
+    <div className="yanyana">
       {" "}
       {student.map((student, index) => {
         const { isim, img, yas, kurs } = student;
         return <Cards key={index} ad={isim} img={img} yas={yas} kurs={kurs} />;
       })}
-    </div> */}
-
-    <Akis/>
+    </div> 
+    <Akis/>*/}
+    
+    <Bitis/> 
   </div>
   
 }
