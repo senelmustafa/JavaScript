@@ -26,6 +26,10 @@ import ProfilCard from "./components/S-Card/ProfilCard";
 import Info from "./components/S-Card/Info";
 import UserCards from "./components/27-user-cards.js/UserCards";
 import Countries from "./components/28-countries/countries";
+import Form1 from "./components/29-Forms/Form1";
+import Form2 from "./components/29-Forms/Form2";
+import Form3 from "./components/29-Forms/Form3";
+import Form4 from "./components/29-Forms/Form4";
  
 
 
@@ -72,8 +76,13 @@ const App = () => {
         followings="50" /> 
       <Info/>
      
-       <UserCards/>  */}
+       <UserCards/>  
       <Countries/>
+      <Form1/>
+      <Form2/>
+      <Form3 />*/}
+      <Form4/>
+
     </div>
   );
 }
