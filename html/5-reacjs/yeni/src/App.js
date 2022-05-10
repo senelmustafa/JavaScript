@@ -1,31 +1,12 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Anasayfa from "./components/Anasayfa";
-import Footer from "./components/Footer";
-import Hakkimizda from "./components/Hakkimizda";
-import Header from "./components/Header";
-import Login from "./components/Login";
-
+import Routers from "./Routers";
+import { StoreContext } from "./store";
+import React, { useState } from "react";
 function App() {
+  const [count, setCount] = useState(0);
   return (
-    <BrowserRouter>
-    
-<Header/>
-
-<Routes>
-  <Route path="/hakkimizda" element={<Hakkimizda/>}/>
-  <Route path="/login" element={<Login />} />
-  <Route path="/anasayfa" element={<Anasayfa />} />
-</Routes>
-
-
-
-
-
-<Footer/>
-
-    </BrowserRouter>
+    <StoreContext.Provider value={{ count, setCount }}>
+      <Routers />
+    </StoreContext.Provider>
   );
-
 }
-
 export default App;

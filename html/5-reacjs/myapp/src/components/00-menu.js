@@ -10,7 +10,7 @@ const Menu = () => {
           <li><Link to="/jsx1">Jsx</Link></li>
           <li><Link to="/jsx2">Jsx2</Link></li>
           <li><Link to="/jsx3">Jsx Loop</Link></li>
-          <li><Link to="/jsx4">Jsx Practise</Link></li>
+          <li><Link to="/JsxPractise">Jsx Practise</Link></li>
           <li><Link to="/Form1">Form1</Link></li>
           <li><Link to="/Form2">Form2</Link></li>
           <li><Link to="/Form3">Form3</Link></li>
@@ -43,10 +43,13 @@ const Menu = () => {
           <li><Link to="/StyleInline">StyleInline</Link></li>
           <li><Link to="/ProfileCard">ProfileCard-Ali</Link></li>
           <li><Link to="/S-Denemeler/PropsHome">Denemeler Props</Link></li>
-      <li><Link to="/set-context">Set Context</Link></li>
-      <li><Link to="/get-context">Get Context</Link></li>
-      <li><Link to="/exchange">Exchange</Link></li>
+          <li><Link to="/set-context">Set Context</Link></li>
+          <li><Link to="/get-context">Get Context</Link></li>
+          <li><Link to="/exchange">Exchange</Link></li>
+          <li><Link to="/dashboard">Admin Panel</Link></li>
+
       </ul>
+
     
     
   )

@@ -43,6 +43,8 @@ import SetContext from "./components/30-set-context";
 import GetContext from "./components/31-get-context";
 import Exchange from "./components/32-exchange/exchange";
 import axios from "axios";
+import Dashboard from "./components/33-children-props/dashboard";
+import Users from "./components/33-children-props/users";
 
 
 const App = () => {
@@ -75,7 +77,7 @@ const [color,setColor] =useState("blue");
               <Route path="/jsx1" element={<jsx1 />} />
               <Route path="/jsx2" element={<Jsx2 />} />
               <Route path="/jsx3" element={<JsxLoop />} />
-               <Route path="/JsxPractise" element={< JsxPractise />} />
+                <Route path="/JsxPractise" element={< JsxPractise />} />
               <Route path="/StyleInline" element={< StyleInline/>} / >
               <Route path="/StyleInternal" element={< StyleInternal/>} / >
               <Route path="StyleExternal/" element={< StyleExternal/>} / >
@@ -106,7 +108,11 @@ const [color,setColor] =useState("blue");
                 <Route path="/get-context" element={<GetContext />} />
                 <Route path="/set-context" element={<SetContext />} />
                 <Route path="/exchange" element={<Exchange />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/users" element={<Users />} />
+
             </Routes>
+            
 
 
 

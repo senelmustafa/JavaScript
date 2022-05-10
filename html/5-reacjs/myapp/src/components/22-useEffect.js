@@ -4,6 +4,7 @@ const UseEffect = () => {
     const [message, setMessage] = useState("");
     const [test, setTest] = useState("");
     console.log("1-Bu satır her state güncellemesinde çalışır.")
+    
     useEffect(() => {
         console.log("2-Bu satır sadece componnet ilk yüklendiğinde çalışır.")
         return () => {
