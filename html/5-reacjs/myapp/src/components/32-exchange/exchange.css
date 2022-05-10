@@ -1,0 +1,23 @@
+.exchange-topbar{
+    background-color: rosybrown;
+    border-radius:3rem;
+    padding:2rem;
+    margin-top:1rem;
+
+}
+.exchange-topbar ul{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    justify-content:space-between;
+}
+.exchange-topbar span {
+font-size: 1.3rem;
+font-weight:600;
+color:rgb(66, 65, 65);
+background-color: white;
+border-radius:3rem;
+margin-left:1rem;
+padding: 0.5rem 1rem;
+}

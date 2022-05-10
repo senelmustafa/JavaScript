@@ -1,0 +1,13 @@
+.menu ul{
+    display:flex;
+    gap:2rem;
+    list-style-type: none;
+    background-color: rgb(198, 195, 195);
+     
+}
+.a{
+    text-decoration: none;
+}
+.footer{
+    margin-top: 80vh;
+}
