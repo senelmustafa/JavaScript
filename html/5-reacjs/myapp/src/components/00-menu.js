@@ -35,7 +35,7 @@ const Menu = () => {
           <li><Link to="/BootstrapDinamik">BootstrapDinamik</Link></li>
           <li><Link to="/BootstrapStatic">BootstrapStatic</Link></li>
           <li><Link to="/Image">Image</Link></li>
-          <li><Link to="/ImagePractise">ImagePractise</Link></li>
+      <li><Link to="/ImagePractise">ImagePractise</Link></li>
           <li><Link to="/Props/Metin">Props Metin</Link></li>
           <li><Link to="/Props/Turgay">Props Turgay</Link></li>
           <li><Link to="/StyleExternal">StyleExternal</Link></li>
@@ -47,6 +47,7 @@ const Menu = () => {
           <li><Link to="/get-context">Get Context</Link></li>
           <li><Link to="/exchange">Exchange</Link></li>
           <li><Link to="/dashboard">Admin Panel</Link></li>
+          <li><Link to="/Slider">Slider</Link></li>
 
       </ul>
 
