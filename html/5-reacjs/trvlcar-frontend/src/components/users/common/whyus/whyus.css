@@ -1,0 +1,15 @@
+.whyus ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+}
+.whyus li::before{
+    content: "\2022";
+color:var(--color1);
+font-size: 2rem;
+font-weight: bold;
+margin-left:-1rem;
+width: 1rem;
+}

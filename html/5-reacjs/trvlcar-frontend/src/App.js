@@ -1,10 +1,10 @@
 import CustomRoutes from "./router/custom-routes";
 
-function App() {
+const App = () => {
   return (
-   <> 
-   <CustomRoutes/>
-   </>
+    <>
+      <CustomRoutes/>
+    </>
   );
 }
 
