@@ -8,15 +8,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Testimonal from "./testimonal";
 import Counters from "./counters";
+
 const Testimonals = () => {
   return (
     <section className="testimonals">
       <Container>
         <Row>
           <Col md={6}>
-            <h3>Testimonials</h3>
-
-            
+            <h3>Testimonals</h3>
             <Swiper
               modules={[Pagination]}
               spaceBetween={50}
@@ -38,4 +37,5 @@ const Testimonals = () => {
     </section>
   );
 };
+
 export default Testimonals;
